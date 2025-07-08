@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Shopping</title>
+</head>
+<body>
+  <h1>Welcome to the Store</h1>
+  <ul>
+    {% for product in products %}
+      <li>
+        <h3>{{ product.name }}</h3>
+        <p>Price: ${{ product.price }}</p>
+        <img src="{{ product.image_url }}" width="200">
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
